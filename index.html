@@ -3,125 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketing Manager Portfolio</title>
+    <title>Tamilas' Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        .jumbotron {
+            margin-bottom: 0;
+            background-image: url('http://wallpapercave.com/wp/dAmaaU7.jpg');
+            background-position: 0% 25%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            filter: grayscale(70%);
+            margin-top: 60px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .card {
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            border: none;
+        }
+
+        .card-block {
+            padding: 20px;
+        }
+
+        .footer {
+            width: 100%;
+            line-height: 60px;
+            background-color: #3498db;
+            color: white;
+            bottom: 0;
             margin: 0;
             padding: 0;
-            background-color: #1f1f1f;
-            color: #fff;
         }
 
-        header {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            text-align: center;
-            padding: 50px 0;
+        .navbar {
+            background-color: #3498db;
+            padding: 5px 30px;
+            border: none;
         }
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 40px;
-            background-color: #34495e;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        .navbar a {
+            color: white;
         }
 
-        h1, h2 {
-            color: #ecf0f1;
-        }
-
-        p {
-            line-height: 1.6;
-            color: #bdc3c7;
-        }
-
-        .project-card {
-            margin: 40px 0;
-            padding: 20px;
-            border: 2px solid #2c3e50;
-            border-radius: 15px;
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .project-card h3 {
-            color: #ecf0f1;
-            margin-bottom: 10px;
-        }
-
-        .social-links {
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            margin-right: 20px;
-            color: #ecf0f1;
-            text-decoration: none;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .social-links a:hover {
-            color: #3498db;
+        .navbar-brand {
+            color: white;
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Marketing Manager</h1>
-        <p>Your Name</p>
-    </header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Tamilas' Portfolio</a>
+                </div>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Short description about yourself and your expertise as a Marketing Manager.</p>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#jumbotron">Header</a></li>
+                        <li><a href="#cards">Portfolio</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-        <h2>Projects</h2>
-        
-        <div class="project-card">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Short description of Project 1.</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <!-- Add more social media links if needed -->
+    <div class="jumbotron jumbotron-fluid text-center" id="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Tamilas</h1>
+            <p class="lead">Portfolio</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" id="cards">
+                    <img class="img-fluid" src="https://s-media-cache-ak0.pinimg.com/736x/68/07/20/680720f8a49a527ae7976dde404c0e14--apple-menu-apples.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Apple</h4>
+                        <p class="card-text">Apple Technology</p>
+                        <a href="http://apple.com" class="btn btn-primary" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="img-fluid" src="https://d1gzz21cah5pzn.cloudfront.net/img/websites/t/tes/teslamotors.com-large.1486617912.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Tesla</h4>
+                        <p class="card-text">Electric, Self Driving Cars</p>
+                        <a href="http://teslamotors.com" class="btn btn-primary" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/www.benahlander.com/benahlander.com/assets/img/Quickdine.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">QuickDine</h4>
+                        <p class="card-text">Order Food via Phone</p>
+                        <a href="https://s3.us-east-2.amazonaws.com/www.benahlander.com/benahlander.com/quickdine/index.html" class="btn btn-primary" target="_blank">Visit Site</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Short description of Project 2.</p>
-            <div class="social-links">
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <!-- Add more social media links if needed -->
-            </div>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <span class="text-muted">Tamilas' Copy Right</span>
         </div>
+    </footer>
 
-        <!-- Add more project cards as needed -->
-
-    </section>
-
-    <script>
-        // You can add JavaScript functionality here if needed
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>
